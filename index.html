@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Todo App</h1>
+        <div>
+            <input type="text" placeholder="Enter a new task" id="add-task-input" class="add-task-input">
+            <button type="button" id="add-task-button">Add Task</button>
+        </div>
+        <ul id="task-list">
+            <li class="task-list-item" ondblclick="editTask(this)">
+                <span>Test</span>
+                <!-- <input type="text" class="add-task-input" value="test"> -->
+                <button type="button" class="delete-button" onclick="deleteTask(this)">Delete</button>
+            </li>
+        </ul>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
